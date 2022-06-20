@@ -7,7 +7,7 @@ window.onload = function () {
     popup.style.display = "block";
 
     // delayed popup timer
-  }, 1000);
+  }, 5000);
 };
 
 close.addEventListener("click", () => {
