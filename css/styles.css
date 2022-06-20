@@ -13,6 +13,12 @@
   }
 }
 
+/* popup animation key frame */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 body.main-page {
   font-family: montserrat;
   background: url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHw%3D&w=1000&q=80) #c8d9fd;
@@ -43,6 +49,10 @@ a:hover {
 .card-body {
 font-size: small;
 line-height: 1;
+}
+
+.card-body .card-bottom-text {
+  margin-bottom: 100px;
 }
 
 .card-header {
@@ -272,10 +282,6 @@ p {
   margin: 20px;
 }
 
-.we-deliver {
-  color: red;
-}
-
 .website-prices {
   margin-top: 75px;
   margin-bottom: 50px;
@@ -284,7 +290,6 @@ p {
 .wrong-mark {
   color: red;
 }
-
 
 /* .remove-auto-type {
   display: none;
@@ -380,8 +385,152 @@ p {
   padding-right: 50px;
   margin-right: 0;
 }
-
 /* new section ends */
+
+/* popup starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.contentBox .content h6{
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgb(85, 84, 84);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: small;
+  cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    box-sizing: border-box;
+    z-index: 10;
+    animation: fadeIn 1.5s;
+
+}
+
+.contentBox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgb(177, 177, 243);
+    /* background: #fff; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contentBox .imgBx {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox .imgBx::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+
+.contentBox .imgBx img {
+    position: relative;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.contentBox .content {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.contentBox .content h3{
+  color: white;
+    /* color: #ff4d54; */
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contentBox .content p{
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+}
+
+.contentBox .content {
+  margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(images\innosol-logo-initial.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+/* popup responsiveness */
+/* @media (max-width: 767px) {
+
+    .contentBox {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+    }
+    .contentBox .imgBx {
+        height: 200px;
+        transform: translateY(-50px);
+    }
+    .contentBox .imgBx::before {
+        background: #fff;
+    }
+    .contentBox .content {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+    }
+    .close {
+        top: -50px;
+        right: -10px;
+        background: #fff url(close.png);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+    }
+} */
+/* popup ends */
+
+
 
 /* on screens within the specified max-width, only auto type text shows */
 /* auto type text appears when the navbar button is toggled down */
