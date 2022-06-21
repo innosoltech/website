@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innosol Technologies - Software (sale & development), websites, digital advertising & more</title>
+    <meta name="description" content="We have a wide range of softwares & offer digital 
+    advertising services that showcase your product/service where your target audience are likely to be.">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu&&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS Stylesheets -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="css\styles.css" />
+
+  <!-- logo initial -->
+  <link rel="icon" href="images\innosol-logo-initial.png">
+
+  <!-- font awesome -->
+  <script
+    src="https://kit.fontawesome.com/bef0c753b2.js"
+    crossorigin="anonymous">
+  </script>
+
+</head>
+
+<body class="main-page">
+  <!-- navbar starts -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">Innosol Technologies</a> -->
+      <a class="navbar-brand" href="#"><img class="logo" src="images\Innosol-logo4.png" alt="innosol-logo"></a>
+      <button onclick="show_hide()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#what-we-do">WHAT WE DO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="p-and-s-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PRODUCTS & SERVICES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="p-and-s-dropdown">
+              <li><a class="dropdown-item" href="#softwares">SOFTWARE PRODUCTS</a></li>
+              <li><a class="dropdown-item" href="#our-services">OUR SERVICES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pricesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PRICES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pricesDropdown">
+              <li><a class="dropdown-item disabled" href="#">Software Products</a></li>
+              <li><a class="dropdown-item" href="pricing.html">Digital Advertising & Website</a></li>              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">CONTACT</a>
+          </li>
+          <!-- <br> -->
+        </ul>
+        <!-- Request button -->
+        <button type="button" 
+          class="btn btn-success btn-sm ask-for-price-button" 
+          data-bs-toggle="modal" data-bs-target="#myModal">Ask for price
+        </button>
+        <!-- <button class="btn btn-primary btn-sm call-button" type="button">
+          <a class="call-us" href="tel: +233 27 2083 116">CALL US</a>
+        </button> -->
+        
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+
+  <!-- TEAM IMAGE AND AUTO TEXT -->
+  <section class="team-image-section" id="what-we-do">
+    <div>
+      <img class="team-image" src="images\team-image-folder\team-image1.png" alt="team-image">
+    </div>   
+    <h5 id="auto-type"><span class="team-img-big-heading">DEDICATED TEAM</span> <br><em class="team-img-what-we-do-text">WE DO: <span class="we-do"></span></em></h5>
+  </section>
+
+  <!-- popup for software product section starts -->
+  <div class="popup">
+    <div class="contentBox">
+      <div class="imgBx">
+          <img src="images\other-images\software-and-website-dev2.png" alt="">
+      </div>
+      <div class="content">
+          <div>
+            <h3><strong>Bonus Offer!</strong></h3>
+            <p>New software clients get a free website</p>
+            <h6 class="close-pop-up">Close</h6>
+          </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- popup for software product section ends -->
+
+  <!-- PRODUCTS AND SERVICE SECTION -->
+  <!-- softwares -->
+  <section class="p-and-s-section" id="softwares">
+    <div class="p-and-s-big-heading-div-1">
+      <h2 class="p-and-s-big-heading"><strong>SOFTWARES</strong></h2>
+      <p>Customizable to your needs</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">Hotel Management</h3>
+        <img class="p-and-s-images" src="images\other-images\hotel management software 2.png" alt="hotel-soft-img">
+        <div class="p-and-s-des-container">
+          <p class="p-and-s-description">iHBS comes with an in-built restaurant POS software, reports 
+            & graphs, to help your data analysis. The software's wide range of features & accounting functionalities 
+            allows you to manage your hotel, lodge, guest house or apartment with ease.
+            It can be used to help further enhance your customer service, and
+            to help you get repeat guest. 
+            See more info <span><a href="https://drive.google.com/file/d/1TQyGmjJqCYeK5ry6KaaasqX-_xr8Mde0/view?usp=drivesdk"><strong class="">here</strong></a></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">Restaurant Management</h3>
+        <img class="p-and-s-images" src="images\other-images\Restaurant POS3.jpg" alt="restaurant-soft-img">
+        <div class="p-and-s-des-container">
+          <p class="p-and-s-description">If you're looking for a restaurant POS software, you would 
+            want to go in for one that can also help boost sales. iPOSS does just this & more. 
+            And if you do deliveries, it sends a "thanks for patronage SMS", after a delivery sale. 
+            it's touch screen compatible, comes with an order taking mobile app, kitchen display system, accounting & more.
+            See more info on software <span><a href="https://drive.google.com/file/d/1IdpOPTWUid5-pyStfzFsy0ZjAIhIrmYS/view?usp=drivesdk"><strong class="">here</strong></a></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">School Management</h3>
+        <img class="p-and-s-images" src="images\other-images\school mgmt3.png" alt="hotel-management-img">
+        <div class="p-and-s-des-container">
+          <p class="p-and-s-description">In today's digital world, you do not have to be sending print out notices to 
+            parents/guardian that may get lost before the pupil gets home. Our Smart School Software sends SMS notices 
+            that can direct parents to a dedicated page on your website, where they get to read the details, first hand. 
+            Bills, payment receipts, end of term report and more, can be accessed online. 
+            It's your all-in-one software that handles all your organisational needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">More Softwares</h3>
+        <div class="more-softwares-container">
+          <img class="p-and-s-images" src="images\other-images\more-softwares.jpg" alt="more-soft-img">
+        </div>
+        <div class="p-and-s-des-container more-softwares">
+          <p class="p-and-s-description">Retail POS Software</p>
+          <p class="p-and-s-description">Pharmacy Software</p>
+          <p class="p-and-s-description">Laundry Software</p>
+          <p class="p-and-s-description">And even more...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Request form starts -->
+    <div class="container">
+      <!-- modal form -->
+      <div class="modal" id="myModal">      
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Please fill this form</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+              <form action="https://formspree.io/f/moqrlgle" 
+                method="POST" 
+                id="my-form">
+
+                <div class="mb-1">
+                  <label for="Name" class="form-label"></label>
+                  <input type="text" id="Name" name="Name" required 
+                  placeholder="Your name or business name" class="form-control">
+                </div>
+            
+                <div class="mb-1">
+                  <label for="Product-or-service" class="form-label"></label>
+                  <input type="text" id="Product-or-service" name="Product-or-service-interest" required
+                  placeholder="Product or service interested in" class="form-control">
+                </div>
+        
+                <div class="mb-1">
+                  <label for="Tel" class="form-label"></label>
+                  <input type="tel" id="tel" name="tel" 
+                  placeholder="Your number (optional)" class="form-control">
+                </div>
+            
+                <div class="mb-1">
+                  <label for="email" class="form-label"></label>
+                  <input type="email" id="email" name="email" required
+                  placeholder="Your email" class="form-control">
+                </div>
+
+                <div id="status"></div>
+
+                <div class="mb-1">
+                  <label for="message" class="form-label"></label>
+                  <textarea name="message" id="message" cols="30" rows="5" required
+                  placeholder="Type your message..." class="form-control"></textarea>
+                </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div> 
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      <!-- <div id="status"></div> -->
+    </div>
+    <!-- Request form ends -->
+  </section>
+  <!-- new section ends -->
+
+  <section class="p-and-s-section" id="our-services">
+    <div class="p-and-s-big-heading-div-2">
+      <h2 class="p-and-s-big-heading"><strong>OUR SERVICES</strong></h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">Digital Advertising</h3>
+        <div>
+          <img class="p-and-s-images" src="images\other-images\digi-ad-img3.jpg" alt="digital-ad-img">
+        </div>
+        <div class="p-and-s-des-container">
+          <p class="p-and-s-description"> <strong>Google Search Ad</strong>: Your website is shown to people searching for the kind of product/service you sell</p>
+          <p class="p-and-s-description"> <strong>Google Display Ad:</strong> Your product/service is displayed in apps or websites your target audience usually visit</p>
+          <p class="p-and-s-description">YouTube Ads, Facebook & Instagram Ads, LinkedIn Ads</p>
+          <h6 class="p-and-s-description">See more details on our digital ad services <span><a href="https://drive.google.com/file/d/18wtUFVX-o2Aimc_EJ6XQQ4P3M2jM8nrH/view?usp=drivesdk"><strong>here</strong></a></span>
+          </h6>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">Graphic Design</h3>
+        <img class="p-and-s-images" src="images\other-images\graphic-design.webp" alt="graphic-design-img">
+        <div class="p-and-s-des-container">
+          <p class="p-and-s-description">Logo & Flyer design</p>
+            <p class="p-and-s-description">Letter head design</p>
+            <p class="p-and-s-description">Business card</p>
+            <p class="p-and-s-description">And more...</p>
+            <h6 class="p-and-s-description">(DELIVERY AVAILABLE)</h6>            
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">Software & Website Development</h3>
+        <img class="p-and-s-images" src="images\other-images\software-and-website-dev2.png" alt="web-dev-img">
+        <div class="p-and-s-des-container">
+          <p class="p-and-s-description">We develop cutting edge softwares that meet your requirement. 
+            And we give you more than you asked for. You discuss your idea with us, 
+            and we bring the idea to life. When it comes to websites, 
+            we have a package plan for everyone. Price starts from GHS125 monthly, 
+            with various package benefits.
+            <!-- See package plans HERE -->
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm p-and-s-row">
+        <h3 class="p-and-s">Video Ad Production & Animation</h3>
+        <img class="p-and-s-images" src="images\other-images\video1.jpg" alt="video-ad-img">
+        <div class="p-and-s-des-container">
+          <p class="p-and-s-description">Video Ads tend to have a more compelling effect on buyer decision 
+            than pictures & text. We produce stunning video ads that help you sell your product/service, 
+            and we run the ad for you on your prefered digital ad platform, one month free. You can request to see some of our video ad works.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SLIDES -->
+  <!-- <section class="" id="products-slides-section">
+    <div id="product-carousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="product-image" src="images\iHBS\iHBS pics new.png" alt="Hotel-software-pic"/>
+          <em>Hotel + Restaurant POS Software</em>
+        </div>
+        <div class="carousel-item">
+          <img class="product-image" src="images\iPOS\iPOSS pic new.png" alt="restaurant-POS-pic">
+          <em>Restaurant POS Software</em>
+        </div>
+        <div class="carousel-item">
+          <img class="product-image" src="images\retail\retail POS3.png" alt="restaurant-POS-pic">
+          <em>Retail POS Software</em>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+  </section> -->
+
+  <!-- Google map location -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.5787426852316!2d-0.07600728590823566!3d5.62902933447747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf8709a3f9d1e9%3A0x29cf31291a5828c!2sInnosol%20Technologies!5e0!3m2!1sen!2sgh!4v1648436530515!5m2!1sen!2sgh" 
+  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <!-- WhatsApp chat widget starts -->
+  <div id="whatswidget-pre-wrapper" class="">
+    <div id="whatswidget-widget-wrapper" class="whatswidget-widget-wrapper" style="all:revert;">
+    <div id="whatswidget-conversation" class="whatswidget-conversation" style="color: revert; font: revert; font-feature-settings: revert; font-kerning: revert; font-optical-sizing: revert; font-variation-settings: revert; text-orientation: revert; text-rendering: revert; -webkit-font-smoothing: revert; -webkit-locale: revert; -webkit-text-orientation: revert; -webkit-writing-mode: revert; writing-mode: revert; zoom: revert; place-content: revert; place-items: revert; place-self: revert; alignment-baseline: revert; animation: revert; appearance: revert; backdrop-filter: revert; backface-visibility: revert; background: revert; background-blend-mode: revert; baseline-shift: revert; block-size: revert; border-block: revert; border: revert; border-radius: revert; border-collapse: revert; border-inline: revert; inset: revert; box-shadow: revert; box-sizing: revert; break-after: revert; break-before: revert; break-inside: revert; buffered-rendering: revert; caption-side: revert; caret-color: revert; clear: revert; clip: revert; clip-path: revert; clip-rule: revert; color-interpolation: revert; color-interpolation-filters: revert; color-rendering: revert; color-scheme: revert; columns: revert; column-fill: revert; gap: revert; column-rule: revert; column-span: revert; contain: revert; contain-intrinsic-size: revert; content: revert; content-visibility: revert; counter-increment: revert; counter-reset: revert; counter-set: revert; cursor: revert; cx: revert; cy: revert; d: revert; display: none; dominant-baseline: revert; empty-cells: revert; fill: revert; fill-opacity: revert; fill-rule: revert; filter: revert; flex: revert; flex-flow: revert; float: revert; flood-color: revert; flood-opacity: revert; grid: revert; grid-area: revert; height: revert; hyphens: revert; image-orientation: revert; image-rendering: revert; inline-size: revert; inset-block: revert; inset-inline: revert; isolation: revert; letter-spacing: revert; lighting-color: revert; line-break: revert; list-style: revert; margin-block: revert; margin: revert; margin-inline: revert; marker: revert; mask: revert; mask-type: revert; max-block-size: revert; max-height: revert; max-inline-size: revert; max-width: revert; min-block-size: revert; min-height: revert; min-inline-size: revert; min-width: revert; mix-blend-mode: revert; object-fit: revert; object-position: revert; offset: revert; opacity: 0; order: revert; origin-trial-test-property: revert; orphans: revert; outline: revert; outline-offset: revert; overflow-anchor: revert; overflow-wrap: revert; overflow: revert; overscroll-behavior-block: revert; overscroll-behavior-inline: revert; overscroll-behavior: revert; padding-block: revert; padding: revert; padding-inline: revert; page: revert; page-orientation: revert; paint-order: revert; perspective: revert; perspective-origin: revert; pointer-events: revert; position: revert; quotes: revert; r: revert; resize: revert; ruby-position: revert; rx: revert; ry: revert; scroll-behavior: revert; scroll-margin-block: revert; scroll-margin: revert; scroll-margin-inline: revert; scroll-padding-block: revert; scroll-padding: revert; scroll-padding-inline: revert; scroll-snap-align: revert; scroll-snap-stop: revert; scroll-snap-type: revert; shape-image-threshold: revert; shape-margin: revert; shape-outside: revert; shape-rendering: revert; size: revert; speak: revert; stop-color: revert; stop-opacity: revert; stroke: revert; stroke-dasharray: revert; stroke-dashoffset: revert; stroke-linecap: revert; stroke-linejoin: revert; stroke-miterlimit: revert; stroke-opacity: revert; stroke-width: revert; tab-size: revert; table-layout: revert; text-align: revert; text-align-last: revert; text-anchor: revert; text-combine-upright: revert; text-decoration: revert; text-decoration-skip-ink: revert; text-indent: revert; text-overflow: revert; text-shadow: revert; text-size-adjust: revert; text-transform: revert; text-underline-offset: revert; text-underline-position: revert; touch-action: revert; transform: revert; transform-box: revert; transform-origin: revert; transform-style: revert; transition: revert; user-select: revert; vector-effect: revert; vertical-align: revert; visibility: revert; -webkit-app-region: revert; border-spacing: revert; -webkit-border-image: revert; -webkit-box-align: revert; -webkit-box-decoration-break: revert; -webkit-box-direction: revert; -webkit-box-flex: revert; -webkit-box-ordinal-group: revert; -webkit-box-orient: revert; -webkit-box-pack: revert; -webkit-box-reflect: revert; -webkit-highlight: revert; -webkit-hyphenate-character: revert; -webkit-line-break: revert; -webkit-line-clamp: revert; -webkit-mask-box-image: revert; -webkit-mask: revert; -webkit-mask-composite: revert; -webkit-perspective-origin-x: revert; -webkit-perspective-origin-y: revert; -webkit-print-color-adjust: revert; -webkit-rtl-ordering: revert; -webkit-ruby-position: revert; -webkit-tap-highlight-color: revert; -webkit-text-combine: revert; -webkit-text-decorations-in-effect: revert; -webkit-text-emphasis: revert; -webkit-text-emphasis-position: revert; -webkit-text-fill-color: revert; -webkit-text-security: revert; -webkit-text-stroke: revert; -webkit-transform-origin-x: revert; -webkit-transform-origin-y: revert; -webkit-transform-origin-z: revert; -webkit-user-drag: revert; -webkit-user-modify: revert; white-space: revert; widows: revert; width: revert; will-change: revert; word-break: revert; word-spacing: revert; x: revert; y: revert; z-index: revert;"><div class="whatswidget-conversation-header" style="all:revert;">
+    <div id="whatswidget-conversation-title" class="whatswidget-conversation-title" style="all:revert;">Team Innosol</div></div><div id="whatswidget-conversation-message" class="whatswidget-conversation-message" style="all:revert;">Drop us your message, using the <span><strong>"ASK FOR PRICE"</strong></span> button located at the top, if you do not use WhatsApp.<br><br>If you use WhatsApp, let's GO!</div><div class="whatswidget-conversation-cta" style="all:revert;"> <a style="all:revert;" id="whatswidget-phone-desktop" target="_blank" href="https://web.whatsapp.com/send?phone=233272083116" class="whatswidget-cta whatswidget-cta-desktop">Chat with us</a> <a id="whatswidget-phone-mobile" target="_blank" href="https://wa.me/233272083116" class="whatswidget-cta whatswidget-cta-mobile" style="all:revert;">Chat with us</a>
+    </div><a target="_blank" class="whatswidget-link" href="https://www.oflox.com" title="Feito no WhatsWidget" style="all:revert;"><img src="" width="16px" style="all:revert;"></a></div>
+    <div id="whatswidget-conversation-message-outer" class="whatswidget-conversation-message-outer" style="all:revert;"> <span id="whatswidget-text-header-outer" class="whatswidget-text-header-outer" style="all:revert;"></span> <div id="whatswidget-text-message-outer" class="whatswidget-text-message-outer" style="all:revert;">Hello! How may we help you?</div></div><div class="whatswidget-button-wrapper" style="all:revert;"><div class="whatswidget-button" id="whatswidget-button" style="all:revert;"><div style="margin:0 auto;width:38.5px;all:revert;"> <img class="whatswidget-icon" style="all:revert;" src=" https://www.oflox.com/blog/wp-content/uploads/2021/01/wpwhite.png"></div></div></div>
+    <script id="whatswidget-script" type="text/javascript">document.getElementById("whatswidget-conversation").style.display="none";document.getElementById("whatswidget-conversation").style.opacity="0"; var button=document.getElementById("whatswidget-button");button.addEventListener("click",openChat);var conversationMessageOuter=document.getElementById("whatswidget-conversation-message-outer");conversationMessageOuter.addEventListener("click",openChat);var chatOpen=!1;function openChat(){0==chatOpen?(document.getElementById("whatswidget-conversation").style.display="block",document.getElementById("whatswidget-conversation").style.opacity=100,chatOpen=!0,document.getElementById("whatswidget-conversation-message-outer").style.display="none"):(document.getElementById("whatswidget-conversation").style.opacity=0,document.getElementById("whatswidget-conversation").style.display="none",chatOpen=!1)}</script></div>
+    <style id="whatswidget-style">.whatswidget-widget-wrapper{font-family:"Helvetica Neue","Apple Color Emoji",Helvetica,Arial,sans-serif !important;font-size:16px !important;position:fixed !important;bottom:20px !important;right:30px !important;z-index:1001 !important}.whatswidget-conversation{background-color:#e4dcd4 !important;background-image:url('https://www.oflox.com/blog/wp-content/uploads/2021/01/wpbg.png') !important;background-repeat:repeat !important;box-shadow:rgba(0, 0, 0, 0.16) 0px 5px 40px !important;width:250px !important;height:300px !important;border-radius:10px !important;transition-duration:0.5s !important;margin-bottom:80px !important}.whatswidget-conversation-header{background-color:white !important;padding:10px !important;padding-left:25px !important;box-shadow:0px 1px #00000029 !important;font-weight:600 !important;border-top-left-radius:10px !important;border-top-right-radius:10px !important}.whatswidget-conversation-message{line-height: 1.2em !important;background-color:white !important;padding:10px !important;margin:10px !important;margin-left:15px !important;border-radius:5px !important}.whatswidget-conversation-message-outer{background-color:#FFF !important;padding:10px !important;margin:10px !important;margin-left:0px !important;border-radius:5px !important;box-shadow:rgba(0, 0, 0, 0.342) 0px 2.5px 10px !important;cursor:pointer !important;animation:nudge 2s linear infinite !important;margin-bottom:70px !important}.whatswidget-text-header-outer{font-weight:bold !important;font-size:90% !important}.whatswidget-text-message-outer{font-size:90% !important}.whatswidget-conversation-cta{border-radius:25px !important;width:175px !important;font-size:110% !important;padding:10px !important;margin:0 auto !important;text-align:center !important;background-color:#23b123 !important;color:white !important;font-weight:bold !important;box-shadow:rgba(0, 0, 0, 0.16) 0px 2.5px 10px !important;transition:1s !important;position:absolute !important;top:62% !important;left:10% !important}.whatswidget-conversation-cta:hover{transform:scale(1.1) !important;filter:brightness(1.3) !important}.whatswidget-cta{text-decoration:none !important;color:white !important}.whatswidget-cta-desktop{display:none !important}.whatswidget-cta-mobile{display:inherit !important}@media (min-width: 48em){.whatswidget-cta-desktop{display:inherit !important}
+    .whatswidget-cta-mobile{display:none !important}}.whatswidget-button-wrapper{position:fixed !important;bottom:15px !important;right:15px !important}.whatswidget-button{position:relative !important;right:0px !important;background-color:#31d831 !important;border-radius:100% !important;width:60px !important;height:60px !important;box-shadow:2px 1px #0d630d63 !important;transition:1s !important}.whatswidget-icon{width:42px !important;height:42px !important;position:absolute !important; bottom:10px !important; left:10px !important;}.whatswidget-button:hover{filter:brightness(115%) !important;transform:rotate(15deg) scale(1.15) !important;cursor:pointer !important}@keyframes nudge{20%,100%{transform:translate(0,0)}0%{transform:translate(0,5px);transform:rotate(2deg)}10%{transform:translate(0,-5px);transform:rotate(-2deg)}}.whatswidget-link{position:absolute !important;bottom:90px !important;right:5px !important;opacity:0.5 !important}</style>
+  </div>
+  <!-- WhatsApp chat widget ends -->
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="social-media">
+      <a href="https://web.facebook.com/www.innosoltechnologies.com.gh"><i class="fa fa-facebook social-media"></i></a>
+      <a href="https://www.youtube.com/playlist?list=PL_AX3nrnYCVgWhQG0HeorUK2tsKE5FEnu"><i class="fa fa-youtube social-media"></i></i></a>
+    </div>    
+    <div class="copy-right">
+      <p>© Innosol Technologies</p>
+      <p class="tel-contact">Tel: +233 27 2083 116</p>
+    </div>
+  </footer>
+
+  <!-- auto type script tag -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- bootstrap javascript tag -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- external javasript tag -->
+  <script src="innosol.js"></script>
+</body>
+</html>

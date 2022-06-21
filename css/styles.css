@@ -1,0 +1,579 @@
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* popup animation key frame */
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+body.main-page {
+  font-family: montserrat;
+  background: url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHdlYiUyMGRlc2lnbnxlbnwwfHwwfHw%3D&w=1000&q=80) #c8d9fd;
+  background-size: cover;
+}
+
+body.pricing {
+  text-align: center;
+  margin-top: 135px;
+  margin-bottom: 50px;
+  background-color: #c8d9fd;
+}
+
+a:hover {
+  color: rgb(206, 198, 198);
+}
+
+/* .brand-identy {
+  line-height: 1.85;
+} */
+
+.call-us {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+
+.card-body {
+font-size: small;
+line-height: 1;
+}
+
+.card-body .card-bottom-text {
+  margin-bottom: 100px;
+}
+
+.card-header {
+  background-color: green;
+  height: 3rem;
+}
+
+.copy-right {
+  margin: 25px 0 0;
+}
+
+.check-mark {
+  color: green;
+}
+
+.digi-ad-header {
+  background-color: #4883ff;
+  padding-top: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.digi-ad-prices {
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+#footer {
+  padding: 3% 15%;
+  text-align: center;
+  background-color: #145da0;
+}
+
+.go-back-to-home {
+  color: blue;
+  /* margin: 25px; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "montserrat", sans-serif;
+}
+
+.icons {
+  font-size: 3.5rem;
+  color: #ef8172;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  width: 200px;
+  border-radius: 8px;
+}
+
+.modal-header {
+  background-color: orange;
+  color: white;
+}
+
+.website-form-header {
+  background-color: green;
+  color: white;
+}
+
+/* .more-softwares {
+  line-height: 1.6;
+} */
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light 300", sans-serif;
+}
+
+#our-services {
+  background-color: aliceblue;
+  box-shadow: 0 0 5px #35353563;
+}
+
+#softwares {
+  background-color: aliceblue;
+  box-shadow: 0 0 5px #35353563;
+}
+
+/* .p-and-s-big-heading-container {
+  margin-top: 5rem;
+  text-align: left;
+  padding-left: 8px;
+} */
+
+p {
+  color: #8f8f8f;
+}
+
+.p-and-s-column {
+  padding: 3% 2%;
+}
+
+/* #products-slides-section {
+  background-color: #145da0;
+  height: 580px;
+  background-size: contain;
+} */
+
+/* .product-image {
+  height: 580px;
+  width: 1100px;
+} */
+
+.product-card {
+  box-shadow: 0 0 5px #35353563;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pricing-pg-noticeBoard {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 1055;
+  color: white;
+  padding: 15px;
+  opacity: 0.8;
+  font-size: small;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.section-heading {
+  margin-top: 50px;
+}
+
+.ask-for-price-button {
+  font-size: medium;
+  border: rgb(98, 184, 98) 3.75px solid;
+}
+
+.tap-or-click-here {
+  color: #145da0;
+ 
+}
+
+.tap-or-click-here:hover {
+  color: gray;
+}
+
+.social-media {
+  margin: 10px;
+  color: white;
+}
+
+.social-media:hover {
+  color: gray;
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  /* Form z-index is 1055 is set to form
+   z-index, so it can be seen */
+  z-index: 1055;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+/* responsive team image section & team image codes */
+.team-image {
+  height: 100%;
+  max-width: 1350px;
+  width: 100%;
+}
+
+/* Headings */
+/* .team-img-big-heading-original {
+  color: rgb(244, 247, 250);
+  margin-left: 1rem;
+  opacity: 0.75;
+  position: absolute;
+  top: 45%;
+} */
+
+.team-img-big-heading {
+  color: rgb(244, 247, 250);
+  /* color: white; */
+  font-size: 200%;
+  margin-left: 1rem;
+  opacity: 0.75;
+  position: absolute;
+  top: 45%;
+}
+
+.team-img-what-we-do-text {
+  margin-left: 1rem;
+  color: rgb(244, 247, 250);
+  /* color: white; */
+  opacity: 0.75;
+  position: absolute;
+  top: 52.5%;
+}
+
+.tel-contact {
+  color: white;
+}
+
+.tel-contact-container {
+  margin: 20px;
+}
+
+.website-prices {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+.wrong-mark {
+  color: red;
+}
+
+/* .remove-auto-type {
+  display: none;
+} */
+
+/* new section starts */
+.p-and-s-images {
+  height: 250px;
+  width: 90%;
+  /* border-radius: 8px; */
+  /* float: left; */
+}
+
+.p-and-s-row {
+  /* width: 25%; */
+  text-align: center;
+  line-height: 2;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.p-and-s-section {
+  margin: 5% 10%;
+  text-align: center;
+}
+
+.p-and-s {
+  font-size: 1.2rem;
+  color: #145da0;
+  text-align: center;
+}
+
+.p-and-s-description {
+  font-size: 0.75rem;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.p-and-s-des-container {
+  padding: 10px;
+  border: 1px solid #c8d9fd;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #c8d9fd;
+}
+
+.p-and-s-big-heading {
+  font-size: 2rem;
+  line-height: 0;
+  color: #8f8f8f;
+}
+
+.p-and-s-big-heading-div-1 {
+  margin-top: 70px;
+  line-height: 2;
+  height: 2rem;
+}
+
+.p-and-s-big-heading-div-2 {
+  margin-top: 95px;
+  margin-bottom: 25px;
+}
+
+.pricing-plan {
+  color: white;
+}
+
+.price-text {
+  color: red;
+}
+
+.more-softwares {
+  line-height: 2;
+}
+
+.we-deliver {
+  color: black;
+}
+
+.currency {
+  font-size: small;
+}
+
+.after-first-year {
+  color: green;
+  font-size: small;
+}
+
+.package-plan-container {
+  margin-bottom: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 0;
+}
+/* new section ends */
+
+/* popup starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.contentBox .content h6{
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgb(85, 84, 84);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: small;
+  cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    box-sizing: border-box;
+    z-index: 10;
+    animation: fadeIn 1.5s;
+
+}
+
+.contentBox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: rgb(177, 177, 243);
+    /* background: #fff; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.contentBox .imgBx {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentBox .imgBx::before {
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+
+.contentBox .imgBx img {
+    position: relative;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.contentBox .content {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.contentBox .content h3{
+  color: white;
+    /* color: #ff4d54; */
+    line-height: 1em;
+    font-weight: 500;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contentBox .content p{
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+}
+
+.contentBox .content {
+  margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #f3f3f3 url(images\innosol-logo-initial.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+/* popup responsiveness */
+/* @media (max-width: 767px) {
+
+    .contentBox {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+    }
+    .contentBox .imgBx {
+        height: 200px;
+        transform: translateY(-50px);
+    }
+    .contentBox .imgBx::before {
+        background: #fff;
+    }
+    .contentBox .content {
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        padding-top: 0;
+    }
+    .close {
+        top: -50px;
+        right: -10px;
+        background: #fff url(close.png);
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+    }
+} */
+/* popup ends */
+
+
+
+/* on screens within the specified max-width, only auto type text shows */
+/* auto type text appears when the navbar button is toggled down */
+@media (max-width: 800px) {
+
+  .p-and-s-section {
+    margin: 5% 2.5%;
+    /* text-align: center; */
+  }
+
+  .team-img-big-heading-original {
+    /* display: none; */
+    color: rgb(244, 247, 250);
+    /* color: white; */
+    margin-left: 0.5rem;
+    opacity: 0.75;
+    position: absolute;
+    top: 25%;
+  }
+
+  .team-img-big-heading {
+    /* display: none; */
+    color: rgb(244, 247, 250);
+    /* color: white; */
+    font-size: 150%;
+    margin-left: 0.5rem;
+    opacity: 0.75;
+    position: absolute;
+    top: 225px;
+  }
+
+  .team-img-what-we-do-text {
+    color: rgb(244, 247, 250);
+    /* color: white; */
+    margin-left: 0.5rem;
+    opacity: 0.75;
+    position: absolute;
+    top: 260px;
+  }
+
+  .team-image {
+    height: 350px;
+    max-width: 1350px;
+    width: 100%;
+  }
+}
