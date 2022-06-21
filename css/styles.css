@@ -409,7 +409,7 @@ p {
     display: none;
     box-sizing: border-box;
     z-index: 10;
-    animation: fadeIn 0.1s;
+    /* animation: fadeIn 0.1s; */
 
 }
 
